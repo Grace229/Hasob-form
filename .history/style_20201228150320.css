@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 1000px;
+}
+.question{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px 50px 10px 10px;
+}
+
+.input{
+    width: 50%;
+    margin: 20px 0px 20px 0px;
+    cursor: pointer;
+
+}
+#first{
+
+}
+.check{
+    border: solid 1px black;
+}
+#input, #ageselect{
+    width: 50%;
+    margin: 30px 10px 20px 10px;
+    border: none;
+}
+select{
+    border: 1px  solid black;
+    background-color:#dad6d6;
+    color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 4px;
+}
+option{
+    border: 1px solid black;
+    font-size:  15px;
+}
+form{
+    width: 600px;
+    height: 890px;
+    margin: auto;
+    background-color: #3CBC8D;
+    padding: 40px;
+    color: #ffffff;
+}
+#error{
+   /* background-color: #ffffff;  */
+   color: red;
+   font-size: 15px;
+}
+#email{
+    width: 70%;
+    margin: 10px 10px 30px 10px;
+    border: none;
+    background-color: rgb(241, 241, 250);
+    padding: 16px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#email:focus{
+    background-color: #ffffff;
+    font-size: 20px;
+    
+}
+.notify{
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    background: #3CBC8D;
+  
+}
+.submit{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #3CBC8D;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn:hover{
+opacity: 0.9;
+}

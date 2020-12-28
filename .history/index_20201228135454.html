@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <div class="notify"></div>
+    <div  class="result">
+     
+    </div>
+    <div class="formBody">
+    <form>
+      <!-- radio button -->
+      <div>
+        <label class="question" for="">1: Gender </label> <br />
+        <input type="radio" name="gender" value="Male" class="input" required />
+        <label> Male</label>
+        <input type="radio" name="gender" value="Female" class="input" required />
+        <label> Female</label>
+        <input type="radio" name="gender" value="Other" class="input" required />
+        <label> Other</label>
+        <input type="radio" name="gender" value="Prefer not to say" class="input" required />
+        <label> Prefer not to say</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input input" type="radio" name="gender" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Default radio
+        </label>
+      </div>
+      <!-- dropdown -->
+      <div>
+        <label class="question" for="ageselect">2: What age range do you belong?</label
+        ><br />
+        <select name="ageselect" id="ageselect" required>
+          <option class="check" value="-1">Select age</option>
+          <option value="15-25" class="check">15-25</option>
+          <option value="26-35" class="check">26-35</option>
+          <option value="36-45" class="check">36-45</option>
+          <option value="46-60" class="check">46-60</option>
+        </select>
+      </div>
+      <!-- checkboxes -->
+      <div>
+        <label class="question" for=""
+          >3: What social media do you spend time on? select all that
+          apply</label
+        >
+        <div class="social-checkboxes">
+          <input type="checkbox" name="social" value="1" class="input" />
+          <label> Whatsapp</label>
+          <input type="checkbox" name="social" value="2" class="input" />
+          <label> Facebook</label>
+          <input type="checkbox" name="social" value="3" class="input" />
+          <label> Instagram</label>
+          <input type="checkbox" name="social" value="4" class="input" />
+          <label> Twitter</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Default checkbox
+            </label>
+          </div>
+          
+        </div>
+      </div>
+      <!-- textbox -->
+      <div>
+        <label class="question" for=""> 4: Email</label>
+        <input type="text" name="email" id="email" required />
+      </div>
+      <div id="error">
+
+      </div>
+
+      <div>
+        <button class="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
