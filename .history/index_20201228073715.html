@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <!-- radio button -->
+        <div>
+            <label class="question" for="">1: Gender </label> <br>
+                <input type="radio" name="gender" value="male" class="input" required> 
+                <label> Male</label>
+                <input type="radio" name="gender" value="male" class="input" required> 
+                <label> Female</label>
+                <input type="radio" name="gender" value="male" class="input" required>  
+                <label> Other</label>
+                <input type="radio" name="gender" value="male" class="input" required> 
+                <label> Prefer not to say</label> 
+                
+        </div>
+        <!-- dropdown -->
+        <div>
+            <label  class="question" for="">2: Whats your age range? </label><br>
+               <select name="grace" id="input" required>
+                   <!-- <option value="male" class="check" selected disabled>
+                    <label>Select age</label>
+                   </option> -->
+                   <option value="male" class="check" required>
+                    <label> 15-25</label>
+                   </option>
+                   <option value="male" class="check" required>
+                    <label> 26-35</label>
+                   </option>
+                   <option value="male" class="check" required>
+                    <label> 36-45</label>
+                   </option>
+                   <option value="male" class="check" required>
+                    <label> 46-60</label>           
+                   </option>
+               </select> 
+        </div> 
+        <!-- checkboxes -->
+           <div>
+            <label  class="question" for="">3: What social media do you spend time on? select all that apply</label>
+            <div class="">
+               <input type="checkbox" name="gender" value="male" class="input" required>
+               <label> Whatsapp</label> 
+                <input type="checkbox" name="gender" value="male" class="input" required>
+                <label> Facebook</label> 
+                <input type="checkbox" name="gender" value="male" class="input" required> 
+                <label> Instagram</label>
+                <input type="checkbox" name="gender" value="male" class="input" required> 
+                <label> Twitter</label>
+        </div> 
+        </div> 
+        <!-- textbox -->
+        <div>
+            <label  class="question" for=""> 4: Email</label> 
+            <input type="email" name="email" id="email" required> 
+        </div>
+
+        <div>
+          <button class="btn"> Submit </button>
+        </div>
+   </form> 
+</body>
+</html>

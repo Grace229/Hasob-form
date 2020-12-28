@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(237, 237, 238);
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,1 @@
+const genger = document.querySelector

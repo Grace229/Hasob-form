@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <!-- radio button -->
+      <div>
+        <label class="question" for="">1: Gender </label> <br />
+        <input type="radio" name="gender" value="Male" class="input" required />
+        <label> Male</label>
+        <input type="radio" name="gender" value="Female" class="input" required />
+        <label> Female</label>
+        <input type="radio" name="gender" value="Other" class="input" required />
+        <label> Other</label>
+        <input type="radio" name="gender" value="Prefer not to say" class="input" required />
+        <label> Prefer not to say</label>
+      </div>
+      <!-- dropdown -->
+      <div>
+        <label class="question" for="ageselect">2: Whats your age range?</label
+        ><br />
+        <select name="ageselect" id="ageselect" required>
+          <option class="check">Select age</option>
+          <option value="15-25" class="check">15-25</option>
+          <option value="26-35" class="check">26-35</option>
+          <option value="male" class="check">36-45</option>
+          <option value="male" class="check">46-60</option>
+        </select>
+      </div>
+      <!-- checkboxes -->
+      <div>
+        <label class="question" for=""
+          >3: What social media do you spend time on? select all that
+          apply</label
+        >
+        <div class="social-checkboxes">
+          <input type="checkbox" name="social" value="male" class="input" />
+          <label> Whatsapp</label>
+          <input type="checkbox" name="social" value="male" class="input" />
+          <label> Facebook</label>
+          <input type="checkbox" name="social" value="male" class="input" />
+          <label> Instagram</label>
+          <input type="checkbox" name="social" value="male" class="input" />
+          <label> Twitter</label>
+        </div>
+      </div>
+      <!-- textbox -->
+      <div>
+        <label class="question" for=""> 4: Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div>
+        <button class="submit">Submit</button>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
