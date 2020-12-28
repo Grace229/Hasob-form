@@ -16,7 +16,7 @@ function submitForm(e) {
     if (item.checked) {
       socialMediaSelected.push(item.value);
     }
-    
+    if
   });
   // get gender selected
   gender.forEach((item) => {
@@ -24,7 +24,6 @@ function submitForm(e) {
       genderSelected = item.value;
     }
   });
-
   const form = {
     gender: genderSelected,
     age: age.value,
@@ -34,6 +33,8 @@ function submitForm(e) {
   formBody.style.display = 'none';
   let formatForm = JSON.stringify(form)
   notify.innerHTML = `Form Submitted successfully 
+  <br/>
+  <br/>
   <br/>
   <br/>
   `

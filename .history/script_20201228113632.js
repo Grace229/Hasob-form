@@ -36,6 +36,7 @@ function submitForm(e) {
   notify.innerHTML = `Form Submitted successfully 
   <br/>
   <br/>
+  <br/>
   `
   result.innerHTML = formatForm
 }

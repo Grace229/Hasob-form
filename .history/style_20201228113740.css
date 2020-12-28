@@ -56,9 +56,7 @@ form{
 .notify{
     font-size: 50px;
     text-align: center;
-    color: #ffffff;
-    background: #3CBC8D;
-  
+    color: #fff;
 }
 .submit{
     cursor: pointer;

@@ -24,7 +24,10 @@ function submitForm(e) {
       genderSelected = item.value;
     }
   });
-
+  if (socialMediaSelected === > 0){
+    alert('select an answer');
+    return false
+  }
   const form = {
     gender: genderSelected,
     age: age.value,
@@ -34,6 +37,8 @@ function submitForm(e) {
   formBody.style.display = 'none';
   let formatForm = JSON.stringify(form)
   notify.innerHTML = `Form Submitted successfully 
+  <br/>
+  <br/>
   <br/>
   <br/>
   `
