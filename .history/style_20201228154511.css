@@ -78,7 +78,7 @@ form{
     text-align: center;
     color: #ffffff;
     background: #3CBC8D;
-    margin-top: 30px;
+    
   
 }
 .submit{
@@ -93,6 +93,6 @@ form{
     border-radius: 4px;
 }
 
-.submit:hover{
+.btn:hover{
 opacity: 0.9;
 }

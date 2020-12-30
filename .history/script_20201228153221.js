@@ -49,6 +49,6 @@ if(age.value < 0){
 }
 function check(){
     
-  }
+}
 
 form.addEventListener("submit", submitForm);

@@ -6,6 +6,7 @@ const age = document.querySelector("#ageselect");
 const email = document.querySelector("#email");
 const result = document.querySelector(".result");
 const notify = document.querySelector(".notify");
+const button = document.querySelector(".submit");
 var regExp= /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z])./;
 let socialMediaSelected = [];
 let genderSelected = null;
@@ -26,13 +27,7 @@ function submitForm(e) {
     }
   });
   
-if(age.value < 0){
-  alert('Please select an age range')
-  return false
-}else if(email.value == "" &&  !regExp.test(email.value)){
-  document.getElementById('error').innerHTML = "PLEASE INPUT A VALID EMAIL";
-         return false;
-}
+
   const form = {
     gender: genderSelected,
     age: age.value,
@@ -48,7 +43,12 @@ if(age.value < 0){
   result.innerHTML = formatForm
 }
 function check(){
-    
+  if(age.value > 0 && email.value !== "" &&  regExp.test(email.value)){
+    button.style.backgroundColor = '#583759';
+    button.disabled = false;
+  }else{
+
   }
+}
 
 form.addEventListener("submit", submitForm);

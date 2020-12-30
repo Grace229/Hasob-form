@@ -25,7 +25,7 @@ function submitForm(e) {
       genderSelected = item.value;
     }
   });
-  
+  funct
 if(age.value < 0){
   alert('Please select an age range')
   return false
@@ -47,8 +47,5 @@ if(age.value < 0){
   `
   result.innerHTML = formatForm
 }
-function check(){
-    
-  }
 
 form.addEventListener("submit", submitForm);

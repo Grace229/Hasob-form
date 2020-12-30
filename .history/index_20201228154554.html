@@ -27,16 +27,17 @@
         <input type="radio" name="gender" value="Prefer not to say" class="input" required />
         <label> Prefer not to say</label>
       </div>
+    
       <!-- dropdown -->
       <div>
         <label class="question" for="ageselect">2: What age range do you belong?</label
         ><br />
         <select name="ageselect" id="ageselect" required>
-          <option class="check" value="-1">Select age</option>
-          <option value="15-25" class="check">15-25</option>
-          <option value="26-35" class="check">26-35</option>
-          <option value="36-45" class="check">36-45</option>
-          <option value="46-60" class="check">46-60</option>
+          <option class="check" value="-1" oninput="check()">Select age</option>
+          <option value="15-25" class="check "oninput="check()">15-25</option>
+          <option value="26-35" class="check" oninput="check()">26-35</option>
+          <option value="36-45" class="check" oninput="check()">36-45</option>
+          <option value="46-60" class="check" oninput="check()">46-60</option>
         </select>
       </div>
       <!-- checkboxes -->
@@ -46,31 +47,31 @@
           apply</label
         >
         <div class="social-checkboxes">
-          <input type="checkbox" name="social" value="1" class="input" />
+          <input type="checkbox" name="social" value="1" class="input" oninput="check()" />
           <label> Whatsapp</label>
-          <input type="checkbox" name="social" value="2" class="input" />
+          <input type="checkbox" name="social" value="2" class="input" oninput="check()"/>
           <label> Facebook</label>
-          <input type="checkbox" name="social" value="3" class="input" />
+          <input type="checkbox" name="social" value="3" class="input"oninput="check()" />
           <label> Instagram</label>
-          <input type="checkbox" name="social" value="4" class="input" />
+          <input type="checkbox" name="social" value="4" class="input" oninput="check()" />
           <label> Twitter</label>
           
         </div>
       </div>
       <!-- textbox -->
       <div>
-        <label class="question" for=""> 4: Email</label><br>
-        <input type="email" name="email" id="email"  />
+        <label class="question" for=""> 4: Email</label>
+        <input type="email" name="email" id="email" oninput="check()" />
       </div>
       <div id="error">
 
       </div>
 
       <div>
-        <button type="submit" class="submit">Submit</button>
+        <button type="submit" class="submit" disabled>Submit</button>
       </div>
     </form>
-  </div> 
+  </div>
     <script src="./script.js"></script>
   </body>
 </html>

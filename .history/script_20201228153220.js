@@ -47,8 +47,6 @@ if(age.value < 0){
   `
   result.innerHTML = formatForm
 }
-function check(){
-    
-  }
+
 
 form.addEventListener("submit", submitForm);

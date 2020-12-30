@@ -26,13 +26,7 @@ function submitForm(e) {
     }
   });
   
-if(age.value < 0){
-  alert('Please select an age range')
-  return false
-}else if(email.value == "" &&  !regExp.test(email.value)){
-  document.getElementById('error').innerHTML = "PLEASE INPUT A VALID EMAIL";
-         return false;
-}
+
   const form = {
     gender: genderSelected,
     age: age.value,
@@ -48,7 +42,13 @@ if(age.value < 0){
   result.innerHTML = formatForm
 }
 function check(){
-    
+  if(age.value < 0 && email.value == "" &&  !regExp.test(email.value)){
+    alert('Please select an age range')
+    return false
+  }else{
+  
+           return false;
   }
+}
 
 form.addEventListener("submit", submitForm);
